@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<!-- saved from url=(0106)file:///C:/Users/alumno/dise%C3%B1o%20II/C%C3%A1sting%20Musical%20%C2%A1Tu%20camino%20a%20la%20fama!.html# -->
+<html lang="es-ES"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cásting Musical ¡Tu camino a la fama!</title>
+    <!--TIPOGRAGFÍAS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Cásting Musical ¡Tu camino a la fama!_files/css2" rel="stylesheet">
+    <style>
+        /*COLORES Y CONFUGARICIÓN <GENERAL*/
+        :ROOT {
+            --violeta: #28023b;
+            --violeta-claro: #63147e;
+            --rosa: #ff5cd6;
+            --rosa-fuerte: #ff00b3;
+            --verde: #28ee00;
+            --azul: #0400f3;
+            --naranja:#f86008;
+            --blanco: #ffffff;
+            --fondo: #fd6dbf;
+            --texto: #38223d;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
+        body {
+            font-family: 'Poppins';
+            background: var(--fondo);
+            color: var(--texto);
+            line-height: 1.7;
+        }
+        h1, h2, h3, .logo {
+            font-family: 'Fredoka', sans-serif;
+            line-height: 1.2;
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        section {
+            padding: 75px 8%;
+            scroll-margin-top: 65px;
+        }
+        .contenedor {
+            max-width: 1200px;
+            margin: auto;
+        }
+        .etiqueta {
+            display: inline-block;
+            background: var(--rosa-fuerte);
+            color: var(--violeta);
+            padding: 6px 15px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+        .titulo-section {
+            font-size: clamp(30px, 4vw, 45px);
+            color: var(--violeta);
+            margin-bottom: 18px;
+        }
+        .subtitulo {
+            max-width: 700px;
+            margin-bottom: 35px;
+        }
+        .boton {
+            display: inline-block;
+            background: var(--violeta);
+            color: white;
+            padding: 13px 24px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 700;
+            transition: .25s;
+        }
+        .boton:hover {
+            background: var(--rosa-fuerte);
+            transform: translateY(-3px);
+        }
+        /*ENCABEZADO Y LOGO*/
+        header {
+            background: var(--violeta);
+            color: var(--blanco);
+            padding: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 15px #321540e1;
+        }
+        .barra {
+            max-width: 1300px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+        }
+        .marca  {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-imagen {
+            width: 55px;
+            height:55px;
+            object-fit: contain;
+            background: var(--rosa);
+            border-radius: 12px;
+        }
+        .logo {
+            font-size: 23px;
+            font-weight: 700;
+        }
+        .marca small {
+            display: block;
+            color: var(--rosa);
+            font-size: 10px;
+            letter-spacing: 1px;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        nav a {
+            font-size:12px;
+            font-weight: 600;
+        }
+        nav a:hover {
+            color: var(--azul)
+        }
+        /*BANNER PRINCIPAL*/
+        .hero {
+            min-height: 570px;
+            padding: 70px 8%;
+            display: flex;
+            align-items: center;
+            background: radial-gradient(circle at 85% 20%, #e40faf 0 8%, transparent 8.5%),
+            radial-gradient(circlr at 90% 80%, #fc8804 0 10%, transparent 10.5%),
+            linear-gradient(120deg, #f712c5, #d804a3 60%, #d4b8f3);
+        }
+        .hero-contenido {
+            max-width: 1200px;
+            width: 100%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 45px;
+        }
+        .hero h1 {
+            font-size: clamp(42px, 6vw, 76px);
+            color: var(--violeta);
+            margin-bottom: 22px;
+            text-transform: uppercase;
+        }
+        .hero h1 span {
+            color: #b83291;
+        }
+        .hero p {
+            font-size: 16px;
+            margin-bottom: 28px;
+            max-width: 540px;
+        }
+        .boton-blanco {
+            background: white;
+            color: var(--violeta);
+            margin-left: 8px;
+        }
+        .boton-blanco:hover {
+            color: white;
+        }
+        .banner-imagen {
+            height: 390px;
+            background: #c101f7;
+            border: 4px solid white;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 12px 12px 0 #321540f1;
+        }
+        /*PRESENTACION DE LA EMPRESA*/
+        .empresa {
+            text-align: center;
+        }
+        .empresa p {
+            max-width: 900px;
+            margin: 0 auto 20px;
+        }
+        .empresa-logo {
+            width: 180px;
+            height: 130px;
+            margin: 25px auto;
+            border-radius: 25px;
+            border: 4px dashed var(--violeta-claro);
+            background: var(--violeta-claro);
+            overflow: hidden;
+        }
+        .frase-empresa {
+            max-width: 800px;
+            margin: 35px auto 0;
+            padding: 25px;
+            background: white;
+            border-left: 6px solid var(--rosa-fuerte);
+            border-radius: 12px;
+            font-family: 'Fredoka', sans-serif;
+            font-size: 22px;
+        }
+        /*PRESENTACION DE CASTING MUSICAL*/
+        .juego {
+            background: var(--violeta);
+            color: white;
+        }
+        .juego.titulo-section {
+            color: var(--naranja);
+        }
+        .juego-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 45px;
+        }
+        .juego-foto {
+            height: 440px;
+            border: 4px solid var(--rosa-fuerte);
+            border-radius: 25px;
+            background: #581f70;
+            overflow: hidden;
+        }
+        .juego p {
+            margin-bottom: 18px;
+        }
+        .datos {
+            display: grid;
+            grid-template-columns: repeat(2fr, 1fr);
+            gap: 12px;
+            margin-top: 25px;
+        }
+        .dato {
+            padding: 18px;
+            border-radius: 15px;
+            background: #ffffff5b;
+            border: 1px solid #ffffff71;
+        }
+        .dato strong {
+            display: block;
+            color: var(--rosa-fuerte);
+            font-size: 25px;
+        }
+        .dato span {
+            font-size: 12px;
+        }
+        /*CATEGORIAS DE CARTAS*/
+        .categorias {
+            text-align: center;
+        }
+        .cartas-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .carta {
+            padding: 25px;
+            border-radius: 24px;
+            text-align: left;
+            color: var(--blanco);
+            box-shadow: 0 8px 0 #955bb3fa;
+            transition: transform .25s;
+        }
+        .carta:hover {
+            transform: translateY(-7px)rotate(-1deg);
+        }
+        .carta-rosa-fuerte {
+            background: var(--rosa-fuerte);
+        }
+        .carta-azul {
+            background: var(--azul);
+        }
+        .carta-violeta {
+            background: var(--violeta);
+        }
+        .carta-naranja {
+            background: var(--naranja);
+        }
+        .carta-verde {
+            background: var(--verde);
+        }
+        .icono-carta {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        .numero-carta {
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+        .carta h3 {
+            font-size: 25px;
+            margin: 12px 0;
+        }
+        .carta p {
+            font-size: 14px;
+        }
+        .carta-ejemplo {
+            margin-top: 20px;
+            height: 170px;
+            border: 2px dashed #321540;
+            border-radius: 15px;
+            overflow: hidden;
+            background: #ffffff65;
+        }
+        /*DINAMICA DEL JUEGO*/
+        .dinamica {
+            background: #eb3fd4;
+        }
+        .pasos-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+        .paso {
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            border-bottom: 5px solid var(--rosa-fuerte);
+        }
+        .paso-numero {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--violeta);
+            color: white;
+            border-radius: 50%;
+            font-family: 'Fredoka', sans-serif;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        .paso h3 {
+            margin-bottom: 10px;
+            color: var(--violeta);
+        }
+        /*POR QUÉ ES EL MÁS VENDIDO*/
+        .exito {
+            background: #f316d6;
+        }
+        .exito-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+        .exito-card {
+            background: white;
+            padding: 18px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px #321540b4;
+        }
+        .exito-foto {
+            height: 200px;
+            border-radius: 14px;
+            overflow: hidden;
+            background: var(--rosa-fuerte);
+            margin-bottom: 18px;
+        }
+        .exito-card h3 {
+            color: var(--violeta);
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+        .exito-card p {
+            font-size: 14px;
+        }
+        /*GALERIA DE FOTOGRAFIAS*/
+            .galeria {
+                text-align: center;
+            }
+            .galeria-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 22px;
+            }
+            .galeria-item {
+                height: 300px;
+                background: #b807e9;
+                border: 4px solid white;
+                border-radius: 20px;
+                overflow: hidden;
+                box-shadow: 0 5px 18px #321540d3;
+            }
+            .galeria-item figcaption {
+                padding: 12px; 
+                background: var(--violeta);
+                color: white;
+                font-size: 13px;
+            }
+            /*BANNER FINAL*/
+            .banner-final {
+                text-align: center;
+                background: linear-gradient(135deg, #e903af, #530074, #2b06ff);
+                padding: 85px 8%;
+            }
+            .banner-final h2 {
+                font-size: clamp(35px, 5vw, 58px);
+                color: var(--violeta);
+                margin-bottom: 18px;
+            }
+            .banner-final p {
+                max-width: 700px;
+                margin: 0 auto 25px;
+            }
+            .banner-final-imagen {
+                max-width: 900px;
+                height: 220px;
+                margin: 35px auto 0;
+                background: #ffffff8a;
+                border: 3px dashed var(--violeta-claro);
+                border-radius: 22px;
+                overflow: hidden;
+            }
+            /*PIR DE OPAGINA*/
+            footer {
+                background: var(--violeta);
+                color: white;
+                padding: 45px 8% 20px;
+            }
+            .footer-grid {
+                max-width: 1200px;
+                margin: auto;
+                display: grid;
+                grid-template-columns: 2fr 1fr 1fr;
+                gap: 35px;
+            }
+            footer h3 {
+                color: var(--rosa-fuerte);
+                margin-bottom: 15px;
+            }
+            footer p, footer a {
+                font-size: 13px;
+                color: #710396;
+            }
+            footer a {
+                display: block; 
+                margin-bottom: 8px;
+            }
+            footer a:hover {
+                color: var(--naranja);
+            }
+            .redes {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-top: 12px;
+            }
+            .redes a {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-top: 12px;
+            }
+            .copyright {
+                max-width: 1200px;
+                margin: 30px auto 0;
+                padding-top: 18px;
+                border-top: 1px solid #ffffff6b;
+                text-align: center;
+                font-size: 12px;
+                color: #320169;
+            }
+            /*DISEÑO RESPONSIVE*/
+            @media (max-width: 850px) {
+                header{
+                    position: stactic;
+                }
+                .barra {
+                    flex-direction: column;
+                }
+                nav {
+                    justify-content: center;
+                    gap: 12px;
+                }
+                .hero-contenido,
+                .juego-grid {
+                    grid-template-columns: 1fr;
+                }
+                .hero {
+                    padding-top: 50px;
+                }
+                .banner-imagen,
+                .juego-foto {
+                    height: 320px;
+                }
+                .cartas-grid,
+                .exito-grid,
+                .pasos-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                .footer-grid {
+                    grid-template-columns: 1fr 1fr;
+                }
+                .footer-grid> div:first-child {
+                    grid-column: 1/-1;
+                }
+            }
+            @media (max-width:520px) {
+                section {
+                    padding: 50px 6%;
+                }
+                .hero {
+                    padding: 45px 6%;
+                }
+                .hero h1 {
+                    font-size: 42px;
+                }
+                .cartas-grid,
+                .exito-grid,
+                .pasos-grid,
+                .galeria-grid,
+                .recursos-grid {
+                    grid-template-columns: 1fr;
+                }
+                .banner-imagen,
+                .juego-foto {
+                    height: 260px;
+                }
+                .galeria-item {
+                    height: 240px;
+                }
+                .footer-grid>div:first-child {
+                    grid-column: auto;
+                }
+                .boton-blanco {
+                    margin: 12px 0 0;
+                }
+            }
+    </style>
+</head>
+<body>
+    <!--ENCABEZADO-->
+    <header>
+        <div class="barra">
+            <a href="file:///C:/Users/alumno/dise%C3%B1o%20II/C%C3%A1sting%20Musical%20%C2%A1Tu%20camino%20a%20la%20fama!.html#inicio" class="marca">
+                <img class="logo-imagen" src="./Cásting Musical ¡Tu camino a la fama!_files/logo-empresa.png" alt="Logo de la empresa">
+                <div>
+                    <div class="logo">MUSIC PLAY GAMES</div>
+                    <small>JUEGOS PARA COMPARTIR</small>
+                </div>
+            </a>
+            <nav>
+                <a href="file:///C:/Users/alumno/dise%C3%B1o%20II/C%C3%A1sting%20Musical%20%C2%A1Tu%20camino%20a%20la%20fama!.html#inicio">Inicio</a>
+                <a href="file:///C:/Users/alumno/dise%C3%B1o%20II/C%C3%A1sting%20Musical%20%C2%A1Tu%20camino%20a%20la%20fama!.html#empresa">Nosotros</a>
+                <a href="file:///C:/Users/alumno/dise%C3%B1o%20II/C%C3%A1sting%20Musical%20%C2%A1Tu%20camino%20a%20la%20fama!.html#juego">Nuestro éxito</a>
+                <a href="file:///C:/Users/alumno/dise%C3%B1o%20II/C%C3%A1sting%20Musical%20%C2%A1Tu%20camino%20a%20la%20fama!.html#categorias">Categorías</a>
+                <a href="file:///C:/Users/alumno/dise%C3%B1o%20II/C%C3%A1sting%20Musical%20%C2%A1Tu%20camino%20a%20la%20fama!.html#dinamica">Cómo se juega</a>
+                <a href="file:///C:/Users/alumno/dise%C3%B1o%20II/C%C3%A1sting%20Musical%20%C2%A1Tu%20camino%20a%20la%20fama!.html#galeria">Galería</a>
+                <a href="file:///C:/Users/alumno/dise%C3%B1o%20II/C%C3%A1sting%20Musical%20%C2%A1Tu%20camino%20a%20la%20fama!.html#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero" id="inicio">
+    <div class="hero-contenido">
+
+        <div>
+            <span class="etiqueta">
+                NUESTRO JUEGO MÁS VENDIDO
+            </span>
+
+            <h1>
+                ¡Tu talento<br>
+                puede llevarte<br>
+                a la <span>fama!</span>
+            </h1>
+
+            <p>Música, desafíos, estrategia y competencia.
+                ¿Tenés lo necesario para convertirte en la
+                próxima estrella del pop? </p>
+
+            <a href="file:///C:/Users/alumno/dise%C3%B1o%20II/C%C3%A1sting%20Musical%20%C2%A1Tu%20camino%20a%20la%20fama!.html#juego" class="boton">
+                DESCUBRÍ EL JUEGO
+            </a>
+
+            <a href="file:///C:/Users/alumno/dise%C3%B1o%20II/C%C3%A1sting%20Musical%20%C2%A1Tu%20camino%20a%20la%20fama!.html#categorias" class="boton boton-blanco">
+                CONOCÉ LAS CARTAS
+            </a>
+        </div>
+
+        <!-- IMAGEN: BANNER PRINCIPAL -->
+        <div class="banner-imagen">
+            <img src="./Cásting Musical ¡Tu camino a la fama!_files/banner-principal.png" alt="Banner promocional de Cásting Musical">
+        </div>
+
+    </div>
+</section>
+<section class="empresa" id="empresa">
+    <div class="contenedor">
+
+        <span class="etiqueta">CONOCÉ NUESTRA HISTORIA</span>
+
+        <h2 class="titulo-seccion">
+            ¡Bienvenidos a nuestro mundo de juegos!
+        </h2>
+
+        <!-- LOGO INSTITUCIONAL -->
+        <div class="empresa-logo">
+            <img src="./Cásting Musical ¡Tu camino a la fama!_files/logo-empresa.png" alt="Identidad visual de la empresa">
+        </div>
+
+        <p>
+            Somos una empresa dedicada al diseño y desarrollo
+            de múltiples juegos de mesa originales, creados para
+            ofrecer experiencias llenas de creatividad, estrategia
+            y diversión. Nuestra misión es reunir a las personas
+            mediante propuestas innovadoras, temáticas atractivas
+            y desafíos que conviertan cada partida en un momento
+            inolvidable.
+        </p>
+
+        <p>
+            Trabajamos para desarrollar juegos que despierten
+            la imaginación, fomenten la interacción y permitan
+            disfrutar de nuevas experiencias en compañía.
+            Cada propuesta tiene una identidad propia y busca
+            ofrecer una manera diferente de jugar, compartir
+            y divertirse.
+        </p>
+
+        <p>
+            A lo largo de nuestros lanzamientos, buscamos
+            sorprender con ideas originales y mecánicas dinámicas.
+            Entre todos nuestros juegos, uno logró destacarse
+            especialmente y convertirse en nuestro mayor éxito:
+            <strong>Cásting Musical, nuestro juego más vendido.</strong>
+        </p>
+
+        <div class="frase-empresa">
+            "Creamos juegos para compartir momentos únicos,
+            despertar la creatividad y disfrutar juntos".
+        </div>
+
+    </div>
+</section>
+<section class="juego" id="juego">
+    <div class="contenedor juego-grid">
+
+        <!-- FOTO DE LA CAJA O DEL TABLERO -->
+        <div class="juego-foto">
+            <img src="./Cásting Musical ¡Tu camino a la fama!_files/caja-juego.png" alt="Caja y presentación de Cásting Musical">
+        </div>
+
+        <div>
+            <span class="etiqueta">
+                NUESTRO MAYOR ÉXITO
+            </span>
+
+            <h2 class="titulo-seccion">
+                CÁSTING MUSICAL
+            </h2>
+
+            <h3>¡Tu camino a la fama comienza acá!</h3>
+
+            <p>
+                ¿Tenés lo necesario para convertirte en la próxima
+                estrella del pop? ¡Llegó el momento de demostrarlo!
+                Cásting Musical es un juego de mesa competitivo
+                inspirado en los realities musicales y la cultura
+                pop de los años 2000.
+            </p>
+
+            <p>
+                Cada participante se convierte en un aspirante
+                a ídolo musical y deberá superar desafíos de canto,
+                baile, rap y polémica para destacarse frente
+                a los demás competidores.
+            </p>
+
+            <p>
+                Pero no todo depende del talento: la estrategia,
+                las decisiones y las cartas de Trampa pueden
+                cambiar el rumbo de la partida en cualquier momento.
+                ¡Cada ronda es una nueva oportunidad para brillar!
+            </p>
+
+            <p>
+                Su combinación de pruebas variadas, competencia,
+                sorpresas y estética pop hizo que se convirtiera
+                en nuestro juego más vendido.
+            </p>
+
+            <div class="datos">
+                <div class="dato">
+                    <strong>63</strong>
+                    <span>Cartas en total</span>
+                </div>
+
+                <div class="dato">
+                    <strong>5</strong>
+                    <span>Categorías</span>
+                </div>
+
+                <div class="dato">
+                    <strong>2–6</strong>
+                    <span>Jugadores</span>
+                </div>
+
+                <div class="dato">
+                    <strong>2000s</strong>
+                    <span>Inspiración musical</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="categorias" id="categorias">
+    <div class="contenedor">
+
+        <span class="etiqueta">DESCUBRÍ LAS CARTAS</span>
+
+        <h2 class="titulo-seccion">
+            ¡Cinco categorías, una sola meta!
+        </h2>
+
+        <p class="subtitulo">
+            Cada categoría aporta una dinámica diferente a la
+            competencia. Demostrá tus habilidades, tomá decisiones
+            estratégicas y preparate para cualquier sorpresa.
+        </p>
+
+        <div class="cartas-grid">
+
+            <article class="carta carta-naranja">
+                <div class="icono-carta">🎤</div>
+                <span class="numero-carta">12 CARTAS</span>
+                <h3>Canto</h3>
+                <p>
+                    Demostrá tus habilidades musicales y enfrentá
+                    pruebas relacionadas con la voz. Cada desafío
+                    es una oportunidad para destacarte.
+                </p>
+                <div class="carta-ejemplo">
+                    <img src="./Cásting Musical ¡Tu camino a la fama!_files/carta-canto.jpeg" alt="Ejemplo de carta de Canto">
+                </div>
+            </article>
+
+            <article class="carta carta-rosa-fuerte">
+                <div class="icono-carta">💃</div>
+                <span class="numero-carta">12 CARTAS</span>
+                <h3>Baile</h3>
+                <p>
+                    Poné a prueba tu ritmo, coordinación y creatividad.
+                    Demostrá que podés destacarte en el escenario.
+                </p>
+                <div class="carta-ejemplo">
+                    <img src="./Cásting Musical ¡Tu camino a la fama!_files/carta-baile.jpeg" alt="Ejemplo de carta de Baile">
+                </div>
+            </article>
+
+            <article class="carta carta-verde">
+                <div class="icono-carta">🎧</div>
+                <span class="numero-carta">12 CARTAS</span>
+                <h3>Rap</h3>
+                <p>
+                    Improvisá, creá rimas y demostr á tu capacidad
+                    para desenvolverte con actitud y creatividad.
+                </p>
+                <div class="carta-ejemplo">
+                    <img src="./Cásting Musical ¡Tu camino a la fama!_files/carta-rap.jpeg" alt="Ejemplo de carta de Rap">
+                </div>
+            </article>
+
+            <article class="carta carta-azul">
+                <div class="icono-carta">🔥</div>
+                <span class="numero-carta">12 CARTAS</span>
+                <h3>Polémica</h3>
+                <p>
+                    Enfrentá situaciones inesperadas, analizá
+                    tus opciones y descubrí cómo desenvolverte
+                    en el mundo de la fama.
+                </p>
+                <div class="carta-ejemplo">
+                    <img src="./Cásting Musical ¡Tu camino a la fama!_files/carta-polemica.jpeg" alt="Ejemplo de carta de Polémica">
+                </div>
+            </article>
+
+            <article class="carta carta-violeta">
+                <div class="icono-carta">🃏</div>
+                <span class="numero-carta">15 CARTAS</span>
+                <h3>Trampa</h3>
+                <p>
+                    ¡Nada está asegurado! Las cartas de Trampa
+                    introducen sorpresas y pueden alterar
+                    los planes de tus competidores.
+                </p>
+                <div class="carta-ejemplo">
+                    <img src="./Cásting Musical ¡Tu camino a la fama!_files/carta-trampa.jpeg" alt="Ejemplo de carta de Trampa">
+                </div>
+            </article>
+
+        </div>
+
+        <p style="margin-top:30px; font-size:13px;">
+            El mazo reúne 48 cartas de pruebas y 15 cartas
+            de Trampa, para un total de 63 cartas.
+        </p>
+
+    </div>
+</section>
+<section class="dinamica" id="dinamica">
+    <div class="contenedor">
+
+        <span class="etiqueta">PREPARATE PARA COMPETIR</span>
+
+        <h2 class="titulo-seccion">
+            ¿Cómo se vive la competencia?
+        </h2>
+
+        <p class="subtitulo">
+            Convertite en un aspirante a estrella y preparate
+            para enfrentar una competencia donde el talento
+            y la estrategia van de la mano.
+        </p>
+
+        <div class="pasos-grid">
+
+            <article class="paso">
+                <div class="paso-numero">1</div>
+                <h3>Prepará tu casting</h3>
+                <p>
+                    Reuní a los participantes, prepará las cartas
+                    y las fichas, y disponete a entrar en la
+                    competencia musical.
+                </p>
+            </article>
+
+            <article class="paso">
+                <div class="paso-numero">2</div>
+                <h3>Superá los desafíos</h3>
+                <p>
+                    Enfrentá las diferentes pruebas de Canto,
+                    Baile, Rap y Polémica. Cada desafío puede
+                    darte una oportunidad para avanzar.
+                </p>
+            </article>
+
+            <article class="paso">
+                <div class="paso-numero">3</div>
+                <h3>Usá tu estrategia</h3>
+                <p>
+                    Aprovechá las oportunidades, administrá
+                    tus recursos y prestá atención a las cartas
+                    de Trampa que pueden cambiar la partida.
+                </p>
+            </article>
+
+        </div>
+
+        <div style="text-align:center; margin-top:35px;">
+            <img src="./Cásting Musical ¡Tu camino a la fama!_files/partida.jpeg" alt="Partida de Cásting Musical" style="height:300px; max-width:850px;
+                margin:auto; border-radius:22px;
+                border:4px solid white;">
+        </div>
+
+    </div>
+</section>
+<section class="exito">
+    <div class="contenedor">
+
+        <span class="etiqueta">EL FAVORITO DEL PÚBLICO</span>
+
+        <h2 class="titulo-seccion">
+            ¿Por qué Cásting Musical se convirtió en nuestro
+            juego más vendido?
+        </h2>
+
+        <p class="subtitulo">
+            Su combinación de música, estrategia, competencia
+            y sorpresas lo convirtió en el gran protagonista
+            de nuestro catálogo.
+        </p>
+
+        <div class="exito-grid">
+
+            <article class="exito-card">
+                <div class="exito-foto">
+                    <img src="./Cásting Musical ¡Tu camino a la fama!_files/estetica-pop.png" alt="Estética inspirada en la cultura pop">
+                </div>
+                <h3>Una estética inolvidable</h3>
+                <p>
+                    Su identidad visual recupera la energía de
+                    los años 2000, con inspiración en los realities
+                    musicales, el pop y el espectáculo.
+                </p>
+            </article>
+
+            <article class="exito-card">
+                <div class="exito-foto">
+                    <img src="./Cásting Musical ¡Tu camino a la fama!_files/amigos-jugando.jpeg" alt="Amigos disfrutando de un juego de mesa">
+                </div>
+                <h3>Competencia entre amigos</h3>
+                <p>
+                    La interacción entre participantes convierte
+                    cada partida en una oportunidad para compartir,
+                    competir y crear recuerdos.
+                </p>
+            </article>
+
+            <article class="exito-card">
+                <div class="exito-foto">
+                    <img src="./Cásting Musical ¡Tu camino a la fama!_files/escenario.png" alt="Escenario musical iluminado">
+                </div>
+                <h3>Sorpresas en cada ronda</h3>
+                <p>
+                    Las distintas categorías y las cartas de Trampa
+                    aportan variedad y mantienen a los jugadores
+                    atentos a lo que puede suceder.
+                </p>
+            </article>
+
+        </div>
+
+        <div class="frase-empresa">
+            ¡No alcanza solamente con tener talento!
+            Para llegar a la fama también necesitás estrategia.
+        </div>
+
+    </div>
+</section>
+<section class="galeria" id="galeria">
+    <div class="contenedor">
+
+        <span class="etiqueta">DESCUBRÍ CADA DETALLE</span>
+
+        <h2 class="titulo-seccion">
+            El universo Cásting Musical
+        </h2>
+
+        <p class="subtitulo">
+            Conocé de cerca los componentes, los diseños y
+            la identidad gráfica de nuestro juego más vendido.
+            Explorá la caja, las cartas, el tablero y las fichas.
+        </p>
+
+        <div class="galeria-grid">
+
+            <figure class="galeria-item">
+                <img src="./Cásting Musical ¡Tu camino a la fama!_files/tablero.jpeg" alt="Tablero del juego">
+            </figure>
+
+            <figure class="galeria-item">
+                <img src="./Cásting Musical ¡Tu camino a la fama!_files/cartas.jpeg" alt="Colección de cartas">
+            </figure>
+
+            <figure class="galeria-item">
+                <img src="./Cásting Musical ¡Tu camino a la fama!_files/personajes.jpeg" alt="Fichas y componentes">
+            </figure>
+
+            <figure class="galeria-item">
+                <img src="./Cásting Musical ¡Tu camino a la fama!_files/caja-juego.png" alt="Caja de Cásting Musical">
+            </figure>
+
+        </div>
+
+    </div>
+</section>
+<section class="banner-final">
+    <div class="contenedor">
+
+        <span class="etiqueta">TU MOMENTO HA LLEGADO</span>
+
+        <h2>¡El escenario te está esperando!</h2>
+
+        <p>
+            Reuní a tus amigos, prepará tu mejor actuación
+            y demostrá que tenés lo necesario para triunfar.
+            En Cásting Musical, cada desafío es una oportunidad
+            para brillar y cada decisión puede cambiar tu destino.
+        </p>
+
+        <a href="file:///C:/Users/alumno/dise%C3%B1o%20II/C%C3%A1sting%20Musical%20%C2%A1Tu%20camino%20a%20la%20fama!.html#inicio" class="boton">
+            ¡QUE COMIENCE EL CASTING!
+        </a>
+
+        <!-- BANNER O IMAGEN PROMOCIONAL -->
+        <div class="banner-final-imagen">
+            <img src="./Cásting Musical ¡Tu camino a la fama!_files/banner-final.png" alt="Banner final de Cásting Musical">
+        </div>
+
+        <h3 style="margin-top:30px; font-size:28px;
+        color:#321540;">
+            CÁSTING MUSICAL
+        </h3>
+
+        <p style="font-weight:700;">
+            ¡Brillá, competí y conquistá la fama!
+        </p>
+
+    </div>
+</section>
+</main>
+<footer id="contacto">
+
+    <div class="footer-grid">
+
+        <div>
+            <img src="./Cásting Musical ¡Tu camino a la fama!_files/logo-empresa.png" alt="Logo empresarial" style="width:75px; height:75px;
+                object-fit:contain; background:#F2B7E3;
+                border-radius:15px; margin-bottom:15px;">
+
+            <h3>MUSIC PLAY GAMES</h3>
+
+            <p>
+                Somos una empresa dedicada al desarrollo
+                de juegos de mesa originales, donde la creatividad,
+                la estrategia y la diversión se encuentran.
+                Creamos experiencias para compartir momentos únicos.
+            </p>
+        </div>
+
+        <div>
+            <h3>Explorá la web</h3>
+            <a href="file:///C:/Users/alumno/dise%C3%B1o%20II/C%C3%A1sting%20Musical%20%C2%A1Tu%20camino%20a%20la%20fama!.html#inicio">Inicio</a>
+            <a href="file:///C:/Users/alumno/dise%C3%B1o%20II/C%C3%A1sting%20Musical%20%C2%A1Tu%20camino%20a%20la%20fama!.html#empresa">Sobre nosotros</a>
+            <a href="file:///C:/Users/alumno/dise%C3%B1o%20II/C%C3%A1sting%20Musical%20%C2%A1Tu%20camino%20a%20la%20fama!.html#juego">Cásting Musical</a>
+            <a href="file:///C:/Users/alumno/dise%C3%B1o%20II/C%C3%A1sting%20Musical%20%C2%A1Tu%20camino%20a%20la%20fama!.html#categorias">Categorías</a>
+            <a href="file:///C:/Users/alumno/dise%C3%B1o%20II/C%C3%A1sting%20Musical%20%C2%A1Tu%20camino%20a%20la%20fama!.html#galeria">Galería</a>
+        </div>
+
+        <div>
+            <h3>Seguinos</h3>
+            <p>Descubrí nuestras novedades y próximos lanzamientos.</p>
+
+            <div class="redes">
+                <a href="file:///C:/Users/alumno/dise%C3%B1o%20II/C%C3%A1sting%20Musical%20%C2%A1Tu%20camino%20a%20la%20fama!.html#" aria-label="Instagram">Instagram:@Cástingpop.26</a>
+            </div>
+
+            <p style="margin-top:15px;">
+                Contacto: MusicPlayGames@gmail.com.ar
+            </p>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 [NOMBRE DE LA EMPRESA].
+        Todos los derechos reservados.
+    </div>
+
+</footer>
+
+</body></html>
